@@ -1,0 +1,24 @@
+<data>
+	<dialog_partner>
+		<entry>
+			<first>1</first>
+			<second>
+				<entry>
+					<name>Old man</name>
+					<id>1</id>
+				</entry>
+			</second>
+		</entry>
+	</dialog_partner>
+	<player>
+		<entry>
+			<second>
+				<entry>
+					<name>Kek</name>
+					<id>0</id>
+				</entry>
+			</second>
+		</entry>
+	</player>
+</data>
+
