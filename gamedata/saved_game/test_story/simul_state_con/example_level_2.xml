@@ -1,0 +1,30 @@
+<data>
+	<dialog_partner>
+		<entry>
+			<first>1</first>
+			<second>
+				<entry>
+					<name>Old man</name>
+					<tags>
+						<elem>
+							<first>jacob_phone</first>
+							<second>true</second>
+						</elem>
+					</tags>
+					<current_tag>unimplemented</current_tag>
+					<id>1</id>
+				</entry>
+			</second>
+		</entry>
+	</dialog_partner>
+	<player>
+		<entry>
+			<second>
+				<entry>
+					<name>Kek</name>
+					<id>0</id>
+				</entry>
+			</second>
+		</entry>
+	</player>
+</data>
