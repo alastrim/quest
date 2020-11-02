@@ -338,6 +338,500 @@
         <beats>
           <elem>Вера, глава "Сломанное крыло" - конец</elem>
         </beats>
+        <goto>altair_deadline_start</goto>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_start</first>
+      <second>
+        <beats>
+          <elem>Таир, глава "Мертвая линия" - начало</elem>
+        </beats>
+        <goto>altair_deadline_1</goto>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_1</first>
+      <second>
+        <beats>
+          <elem>Раскалывается голова. Меж приоткрытыми веками замерла расплывчатая картинка - капли осеннего дождя, текущие по оконному стеклу, и треснувшая деревянная рама.</elem>
+          <elem>Погода меня доконает. Перепады давления, вечный недосып, синяки под глазами, жуткая слабость. Вчера я едва смог подняться с постели, и вряд ли сегодня будет легче. От дешевого растворимого кофе уже тошнит, но он хоть как-то помогает сосредоточиться.</elem>
+          <elem>Было бы проще, если я бы я мог пить хороший кофе, нормально питаться и спать в своей кровати, а не в койке общежития. Уверен, слабость бы ушла, и голова бы соображала куда лучше. Но ради настоящей жизни придется постараться.</elem>
+          <elem>Стук в дверь отдается в ушах будто удары по черепу. Собравшись с силами, я резко сажусь в кровати, и в глазах темнеет. Я успеваю заметить какое-то движение около койки сестры - но когда зрение возвращается, там остается только смятый ковер и брошенное на пол пальто.</elem>
+          <elem>Вставая и подходя к двери, я успеваю заметить, что Вера лежит на кровати в одежде и обуви.</elem>
+          <elem>Я уже перестал просыпаться каждый раз, когда ее болезнь берет свое. Нарколепсия, или лунатизм, если простыми словами. Но я устал следить за ее прогулками во сне. Мне остается только надеяться, что ничего плохого не случится.</elem>
+          <elem>Заклинившую дверь удается отпереть со второго раза. Затекшие мышцы плеча откликаются на напряжение недовольной болью.</elem>
+          <elem>В дверном проеме замерла рубленая фигура коменданта Стечкина, бессменного хранителя общежития номер 8. С каждым днем волосы старика кажутся мне все белее, а отголоск чести в его глазах - все ярче.</elem>
+        </beats>
+        <goto_conditional>
+          <npc_conditions>
+            <elem>
+              <first>
+                <name>guard</name>
+                <value>sneak</value>
+              </first>
+              <second>altair_deadline_11</second>
+            </elem>
+            <elem>
+              <first>
+                <name>guard</name>
+                <value>lie</value>
+              </first>
+              <second>altair_deadline_12</second>
+            </elem>
+            <elem>
+              <first>
+                <name>guard</name>
+                <value>force</value>
+              </first>
+              <second>altair_deadline_13</second>
+            </elem>
+          </npc_conditions>
+        </goto_conditional>
+        <npc_tags_to_set>
+          <elem>
+            <name>stechkin_happy_1</name>
+            <value>false</value>
+          </elem>
+          <elem>
+            <name>stechkin_happy_2</name>
+            <value>false</value>
+          </elem>
+        </npc_tags_to_set>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_11</first>
+      <second>
+        <beats>
+          <elem>Его слегка обеспокоенный взгляд пробегает по моему изможденному лицу, и брови слабо гнутся, выражая сочувствие и сопереживание.</elem>
+          <elem> -- Таир, добрый день. Я хотел спросить, Вера сейчас здесь? Она ночью снова выходила, но не знаю, вернулась ли - в корпусе пробки вышибало, я полночи своих рук не видел, не то что проходную.</elem>
+        </beats>
+        <answers>
+          <elem>
+            <text>Устало кивнуть.</text>
+            <goto>altair_deadline_111</goto>
+          </elem>
+          <elem>
+            <text>"Спасибо, что беспокоитесь. Она тут, все хорошо."</text>
+            <goto>altair_deadline_112</goto>
+          </elem>
+        </answers>
+        <npc_tags_to_set>
+          <elem>
+            <name>stechkin_happy_1</name>
+            <value>true</value>
+          </elem>
+        </npc_tags_to_set>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_111</first>
+      <second>
+        <beats>
+          <elem>Стечкин кивает в ответ. Выражение его лица становится чуть более спокойным, но беглый взгляд все еще задерживается на синяках под моими глазами.</elem>
+        </beats>
+        <goto>altair_deadline_11_</goto>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_112</first>
+      <second>
+        <beats>
+          <elem>Уголки губ комендант растягиваются в приглушенной улыбке. Сбившись, он даже случайно обращается ко мне на "ты".</elem>
+          <elem> -- Хорошо. Прости, если отвлекаю, я просто проверить хотел. Переживаю за девочку...</elem>
+        </beats>
+        <goto>altair_deadline_11_</goto>
+        <npc_tags_to_set>
+          <elem>
+            <name>stechkin_happy_2</name>
+            <value>true</value>
+          </elem>
+        </npc_tags_to_set>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_11_</first>
+      <second>
+        <beats>
+          <elem>Уже собираясь уходить, комендант бросает взгляд внутрь комнаты - на кипы исписанных листов, разбросанных возле моей койки.</elem>
+          <elem> -- Как работа? Получится закончить до конца недели? Если я могу чем-то помочь...</elem>
+        </beats>
+        <goto>altair_deadline_11_</goto>
+        <answers>
+          <elem>
+            <text>Вздохнуть: "Честно? Туго идет."</text>
+            <goto>altair_glass_pattern_11_1</goto>
+          </elem>
+          <elem>
+            <text>Пожать плечами с легкой улыбкой: "Должен сделать - значит, сделаю."</text>
+            <goto>altair_glass_pattern_11_2</goto>
+          </elem>
+          <elem>
+            <text>Усмехнуться: "Не гоните нас хоть пару дней, если статья не выгорит, ладно?"</text>
+            <goto>altair_glass_pattern_11_3</goto>
+          </elem>
+        </answers>
+        <npc_tags_to_set>
+          <elem>
+            <name>stechkin_job</name>
+            <value>false</value>
+          </elem>
+        </npc_tags_to_set>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_11_1</first>
+      <second>
+        <beats>
+          <elem>Стечкин поднимает глаза куда-то в потолок. Фраза звучит медленно и задумчиво.</elem>
+          <elem> -- На науке ведь мир не кончается. Подумайте, может, не ваше... Тем более сестра на шее - при всем моем уважении к ней. Вам на фабрику бы, деньги...</elem>
+          <elem>Он сбивается, бросив взгляд на мое усталое лицо.</elem>
+          <elem> -- Хотя, может, тоже не ваше. Простите. Вам лучше знать.</elem>
+          <elem>Обеспокоенно вздохнув, комендант уходит обратно на свой пост.</elem>
+        </beats>
+        <goto>altair_deadline_2</goto>
+        <npc_tags_to_set>
+          <elem>
+            <name>stechkin_job</name>
+            <value>true</value>
+          </elem>
+        </npc_tags_to_set>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_11_2</first>
+      <second>
+        <beats>
+          <elem>Чуть поколебавшись, Стечкин одобрительно хлопает меня по плечу. Не говоря ни слова, он кивает мне напоследок, и уходит обратно на свой пост.</elem>
+        </beats>
+        <goto>altair_deadline_2</goto>
+        <npc_tags_to_set>
+          <elem>
+            <name>stechkin_happy_2</name>
+            <value>true</value>
+          </elem>
+        </npc_tags_to_set>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_11_3</first>
+      <second>
+        <beats>
+          <elem>Комендант приподнимает бровь и прикусывает губу. Покачав головой, он медленно отвечает.</elem>
+          <elem> -- Таир, вы знаете, как я к подобному отношусь. При всем моем к вам уважении.</elem>
+          <elem>Еще раз расстроенно покачав головой, комендант уходит обратно на свой пост.</elem>
+        </beats>
+        <goto>altair_deadline_2</goto>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_12</first>
+      <second>
+        <beats>
+          <elem>Его хмурый взгляд подозрительно простреливает комнату за моей спиной, но затем, оглядев мое изможденное лицо, Стечкин немного смягчается.</elem>
+          <elem> -- Ваша сестра выходила ночью. Не знаю, по болезни, или по делу...</elem>
+          <elem>Комендант задумчиво поднимает бровь.</elem>
+          <elem> -- Так или иначе - он делает ударение на первый слог - Вера вернулась в корпус с гостьей, немного странного вида.</elem>
+          <elem>Не знаю, о чем он говорит. Стоит его проводить и расспросить Веру - хотя велика вероятность, что она не помнит эту ночь вовсе.</elem>
+          <elem>Глаза коменданта снова обшаривают комнату за моей спиной, но комендант быстро переводит взгляд, стараясь оставаться корректным.</elem>
+          <elem> -- Вашу сестру я донимать не стал, по, так сказать, состоянию здоровья. Но надо бумаги заполнить, если это ваша родственница. И так вам делаю одолжение, нельзя в двушку гостя ночевать пускать...</elem>
+          <elem>Стечкин фыркает, пытаясь примирить свое великодушие со священным писанием правил.</elem>
+        </beats>
+        <answers>
+          <elem>
+            <text>Устало кивнуть и пробормотать: "Сделаю, чуть позже..."</text>
+            <goto>altair_deadline_111</goto>
+          </elem>
+          <elem>
+            <text>Выдавить улыбку: "Конечно. Я в течение пары часов все заполню, нужно только проснуться."</text>
+            <goto>altair_deadline_122</goto>
+          </elem>
+        </answers>
+        <npc_tags_to_set>
+          <elem>
+            <name>stechkin_happy_1</name>
+            <value>true</value>
+          </elem>
+        </npc_tags_to_set>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_122</first>
+      <second>
+        <beats>
+          <elem> -- Хорошо. Прости, если отвлекаю, но надо все в порядке держать - ты меня должен понимать.</elem>
+        </beats>
+        <npc_tags_to_set>
+          <elem>
+            <name>stechkin_happy_2</name>
+            <value>true</value>
+          </elem>
+        </npc_tags_to_set>
+        <goto>altair_deadline_11_</goto>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_13</first>
+      <second>
+        <beats>
+          <elem>Я никогда не видел на его лице подобного выражения - смесь обиды и гнева, приглушенные воспитанием и остатками уважения ко мне.</elem>
+          <elem> -- Добрый. День.</elem>
+          <elem>Его хмурый взгляд простреливает комнату за моей спиной.</elem>
+          <elem> -- Я понимаю, у вашей сестры проблемы со... здоровьем. Но это...  - комендант выбирает выражение помягче - вышло за рамки.</elem>
+          <elem>Черт. Не знаю, что именно случилось на этот раз. Ясно было, что рано или поздно нарколепсия обернется проблемой и потребует внимания. Остается надеяться, что никто не пострадал...</elem>
+        </beats>
+        <answers>
+          <elem>
+            <text>"Я прошу прощ..."</text>
+            <goto>altair_deadline_131</goto>
+          </elem>
+          <elem>
+            <text>"А что им..."</text>
+            <goto>altair_deadline_132</goto>
+          </elem>
+          <elem>
+            <text>"Все в поря..."</text>
+            <goto>altair_deadline_133</goto>
+          </elem>
+          <elem>
+            <text>"Я могу ч..."</text>
+            <goto>altair_deadline_134</goto>
+          </elem>
+        </answers>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_131</first>
+      <second>
+        <beats>
+          <elem>Лицо коменданта буквально на мгновение становится мягче  - но он продолжает.</elem>
+        </beats>
+        <npc_tags_to_set>
+          <elem>
+            <name>stechkin_happy_2</name>
+            <value>true</value>
+          </elem>
+        </npc_tags_to_set>
+        <goto>altair_deadline_13_</goto>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_132</first>
+      <second>
+        <goto>altair_deadline_134</goto>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_133</first>
+      <second>
+        <beats>
+          <elem>Голос коменданта впервые на моей памяти звучит так громко.</elem>
+          <elem> -- Нет! Не все в порядке, иначе бы я здесь не стоял!</elem>
+          <elem>Тряхнув головой, он успокаивается и продолжает.</elem>
+        </beats>
+        <goto>altair_deadline_13_</goto>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_134</first>
+      <second>
+        <beats>
+          <elem> -- Не перебивайте.</elem>
+          <elem>Строго глянув мне в глаза, он продолжает.</elem>
+        </beats>
+        <goto>altair_deadline_13_</goto>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_13_</first>
+      <second>
+        <beats>
+          <elem> -- Сегодня ночью ваша сестра вернулась в корпус с гостьей. Весьма странного вида, если не сказать жестче.</elem>
+          <elem>Он мотает головой, будто не веря тому, что говорит.</elem>
+          <elem> -- Когда я потребовал объяснений и отказался впускать в государственное учреждение человека без оформления, Вера не только накричала на меня, но и подняла руку. Я не хотел физического конфликта с нездоровой девушкой, и впустил обоих.</elem>
+          <elem>Он снова бросает взгляд мне за спину.</elem>
+          <elem> -- Не знаю и знать не хочу, гда эта гостья сейчас. Я и так вам одолжение делаю, закрывая глаза на кучу проблем, с учетом вашей ситуации. Но это... неприемлемо. Ваш сосед на месте Веры уже бы вещи собирал.</elem>
+          <elem>Видя, что я хочу что-то сказать, комендант только качает головой. Уже собравшись уходить, он бросает взгляд на кипу исписанных листов, разбросанных у моей койки.</elem>
+          <elem> -- Не знаю теперь даже, желать ли вам удачи в работе. Провалите свою статью, и выселят вас через неделю. Оно может и к лучшему.</elem>
+          <elem>Развернувшись, он отправляется обратно на свой пост.</elem>
+        </beats>
+        <goto_conditional>
+          <npc_conditions>
+            <elem>
+              <first>
+                <name>stechkin_happy_2</name>
+                <value>true</value>
+              </first>
+              <second>altair_deadline_13__</second>
+            </elem>
+            <elem>
+              <first>
+                <name>stechkin_happy_2</name>
+                <value>false</value>
+              </first>
+              <second>altair_deadline_2</second>
+            </elem>
+          </npc_conditions>
+        </goto_conditional>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_13__</first>
+      <second>
+        <beats>
+          <elem>Остановившись через пару шагов, он оборачивается.</elem>
+          <elem> -- Ладно, Таир, вы уж простите... Сами все понимаете...</elem>
+          <elem>Покачав головой, комендант продолжает путь.</elem>
+        </beats>
+        <goto>altair_deadline_2</goto>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_2</first>
+      <second>
+        <beats>
+          <elem>А я, прикрыв дверь, возвращаюсь в свои тесные восемь квадратов.</elem>
+          <elem>Меня встречают две пары глаз.</elem>
+          <elem>Вера, проснувшаяся от шума, глядит на меня своим оторванным от мира взором.</elem>
+          <elem>А рядом с ее койкой сидит незнакомая мне девушка, пытаясь сдвинуть со лба спутанные волосы. В ее лице читается скованность и испуг.</elem>
+          <elem>Мне не пришлось задавать вопрос вслух. Постепенно приходя в себя, незнакомка с каждым словом говорит все увереннее - но все еще тихо и вежливо.</elem>
+          <elem> -- Так вышло, что я вчера ночью осталась на улице. Сейчас холодно очень, когда темнеет... Я увидела, как Вера идет в общежитие, и попросила меня приютить до утра.</elem>
+          <elem>Она бросает взгляд на Веру, но та отвечает своей вечной непонимающей улыбкой и кратким пожатием плечами. "Прости, брат, не помню." Незнакомка продолжает говорить.</elem>
+        </beats>
+        <goto_conditional>
+          <npc_conditions>
+            <elem>
+              <first>
+                <name>guard</name>
+                <value>sneak</value>
+              </first>
+              <second>altair_deadline_21</second>
+            </elem>
+            <elem>
+              <first>
+                <name>guard</name>
+                <value>lie</value>
+              </first>
+              <second>altair_deadline_22</second>
+            </elem>
+            <elem>
+              <first>
+                <name>guard</name>
+                <value>force</value>
+              </first>
+              <second>altair_deadline_23</second>
+            </elem>
+          </npc_conditions>
+        </goto_conditional>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_21</first>
+      <second>
+        <beats>
+          <elem> -- Когда мы к проходной подошли, пробки вышибло, и вырубился свет. У вас такое часто бывает? И мы сюда прошли.</elem>
+        </beats>
+        <goto>altair_deadline_2_</goto>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_22</first>
+      <second>
+        <beats>
+          <elem> -- Вера сказала на проходной, что я к ней в гости иду. Комендант начал с ней спорить, но потом нас пропустил. И мы сюда прошли.</elem>
+        </beats>
+        <goto>altair_deadline_2_</goto>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_23</first>
+      <second>
+        <beats>
+          <elem> -- Комендант не хотел нас пускать, и Вера на него накричала, замахнулась даже... Он отошел, и мы сюда прошли.</elem>
+          <elem>Незнакомка ежится и вжимается в стену.</elem>
+          <elem> -- Простите, если проблемы из-за этого. Я не ожидала...</elem>
+        </beats>
+        <goto>altair_deadline_2_</goto>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_2_</first>
+      <second>
+        <beats>
+          <elem>Не слишком внимательно слушая рассказ, Вера тем временем встает с кровати и заваривает кофе. На маленьком столике появляется три кружки - одна из них, с отломанной ручкой, по всей видимости предназначена незнакомке.</elem>
+          <elem>Недоверчиво глядя на кружки, та поднимается на ноги. Ее мятые и рваные джинсы производят жалкое впечатление даже на меня. Колено разодрано в кровь.</elem>
+          <elem> -- Я, наверное, пойду? Не буду вам мешать, и большое спасибо за ночлег.</elem>
+          <elem>Незнакомка делает неловкий шаг к двери.</elem>
+        </beats>
+        <answers>
+          <elem>
+            <text>"Можешь принять у нас душ, если хочешь. Мне жаль, но вряд ли мы можем помочь чем-то еще."</text>
+            <goto>altair_deadline_2_1</goto>
+          </elem>
+          <elem>
+            <text>"Если хочешь, можешь пока остаться здесь. У нас тоже нелегкие времена. Поможем друг другу."</text>
+            <goto>altair_deadline_2_2</goto>
+          </elem>
+        </answers>
+        <npc_tags_to_set>
+          <elem>
+            <name>polaris_happy_1</name>
+            <value>false</value>
+          </elem>
+        </npc_tags_to_set>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_2_1</first>
+      <second>
+        <beats>
+          <elem>Неожиданно для себя я слышу теплый голос сестры в ответ. Она редко говорит.</elem>
+          <elem> -- Таир, пусть она останется у нас. Скажи, как тебя зовут? Может, я спрашивала ночью, но забыла.</elem>
+        </beats>
+        <goto>altair_deadline_2__</goto>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_2_2</first>
+      <second>
+        <beats>
+          <elem>Неожиданно для себя я слышу теплый голос сестры в ответ. Она редко говорит.</elem>
+          <elem> -- Да, оставайся. Скажи, как тебя зовут? Может, я спрашивала ночью, но забыла.</elem>
+        </beats>
+        <goto>altair_deadline_2__</goto>
+        <npc_tags_to_set>
+          <elem>
+            <name>polaris_happy_1</name>
+            <value>true</value>
+          </elem>
+        </npc_tags_to_set>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_2__</first>
+      <second>
+        <beats>
+          <elem>Незнакомка обращает к нам взгляд, полный удивления и осторожной радости. Садясь на пол около столика и протягивая руки к чашке дешевого кофе, она проговаривает.</elem>
+          <elem> -- Я Полина. Поля.</elem>
+          <elem>...</elem>
+          <elem>...</elem>
+          <elem>...</elem>
+          <elem>Дождь за начинает стучать по стеклу все сильнее, и пасмурное осеннее утро постепенно начинает казаться вечером. Дым от кипящей кофейной турки поднимается к потолку, к ободранной штукатурке и старой железной люстре.</elem>
+          <elem>Странный неторопливый разговор служит отдыхом всем троим. Постепенно он начинает затихать - Вера, сняв наконец кроссовки, ложится обратно в кровать, а Поля, стараясь найти себе место, расправляет покрывала и вешает брошенное пальто на крючок.</elem>
+          <elem>Не вставая с пола, я залпом выпиваю еще чашку кофе и беру в руку один из множества листов бумаги, брошенных у кровати.</elem>
+          <elem>Незаконченный граф Льюиса режет мне глаза оборванными линиями и стертыми цифрами. Эта работа - мой шедевр, и она меня доконает.</elem>
+          <elem>Вздохнув, я окунаюсь с головой в переплетение вершин, ребер и чисел.</elem>
+        </beats>
+        <goto>altair_deadline_end</goto>
+      </second>
+    </entry>
+    <entry>
+      <first>altair_deadline_end</first>
+      <second>
+        <beats>
+          <elem>Таир, глава "Мертвая линия" - конец</elem>
+        </beats>
         <goto>unimplemented</goto>
       </second>
     </entry>
@@ -493,7 +987,39 @@
     <entry>
       <first>start</first>
       <second>
-        <goto>polaris_cold_start</goto>
+        <beats>
+          <elem>Enter - следующий абзац текста</elem>
+          <elem>1, 2, 3 ... - выбор варианта ответа</elem>
+        </beats>
+        <answers>
+          <elem>
+            <text>Начать игру с начала</text>
+            <goto>polaris_cold_start</goto>
+          </elem>
+          <elem>
+            <text>Выбрать главу</text>
+            <goto>chapter_choice</goto>
+          </elem>
+        </answers>
+      </second>
+    </entry>
+    <entry>
+      <first>chapter_choice</first>
+      <second>
+        <answers>
+          <elem>
+            <text>Поля, глава "Холод"</text>
+            <goto>polaris_cold_start</goto>
+          </elem>
+          <elem>
+            <text>Вера, глава "Сломанное крыло"</text>
+            <goto>vega_wing_start</goto>
+          </elem>
+          <elem>
+            <text>Таир, глава "Мертвая линия"</text>
+            <goto>altair_deadline_start</goto>
+          </elem>
+        </answers>
       </second>
     </entry>
     <entry>
