@@ -1095,42 +1095,42 @@
         <answers>
           <elem>
             <text>- Что тебе от меня нужно?</text>
-            <tags_required>
+            <npc_tags_required>
               <elem>
                 <name>asked_nameless_1</name>
                 <value>false</value>
               </elem>
-            </tags_required>
+            </npc_tags_required>
             <goto>vega_whispers_21__1</goto>
           </elem>
           <elem>
             <text>- Кто ты?</text>
-            <tags_required>
+            <npc_tags_required>
               <elem>
                 <name>asked_nameless_2</name>
                 <value>false</value>
               </elem>
-            </tags_required>
+            </npc_tags_required>
             <goto>vega_whispers_21__2</goto>
           </elem>
           <elem>
             <text>- Почему от тебя веет холодом?</text>
-            <tags_required>
+            <npc_tags_required>
               <elem>
                 <name>asked_nameless_3</name>
                 <value>false</value>
               </elem>
-            </tags_required>
+            </npc_tags_required>
             <goto>vega_whispers_21__3</goto>
           </elem>
           <elem>
             <text>- Ты можешь мне помочь?</text>
-            <tags_required>
+            <npc_tags_required>
               <elem>
                 <name>asked_nameless_4</name>
                 <value>false</value>
               </elem>
-            </tags_required>
+            </npc_tags_required>
             <goto>vega_whispers_21__4</goto>
           </elem>
         </answers>
@@ -1655,5 +1655,6 @@
     </entry>
   </lines>
 </data>
+
 
 
