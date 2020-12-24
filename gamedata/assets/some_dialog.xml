@@ -1633,6 +1633,10 @@
               </elem>
             </npc_tags_to_set>
           </elem>
+          <elem>
+            <text>Вера, глава "Шепот"</text>
+            <goto>vega_whispers_start</goto>
+          </elem>
         </answers>
       </second>
     </entry>
