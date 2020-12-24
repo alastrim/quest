@@ -927,6 +927,12 @@
             <goto>vega_whispers_12</goto>
           </elem>
         </answers>
+        <npc_tags_to_set>
+          <elem>
+            <name>cold_heart</name>
+            <value>false</value>
+          </elem>
+        </npc_tags_to_set>
       </second>
     </entry>
     <entry>
@@ -1046,12 +1052,6 @@
           <elem>&#160;-- Но все-таки... Не говорить же с тобой на коленях.</elem>
           <elem>Медленно, с видимым трудом Безымянная встает на ноги.</elem>
         </beats>
-        <npc_tags_to_set>
-          <elem>
-            <name>cold_heart</name>
-            <value>false</value>
-          </elem>
-        </npc_tags_to_set>
         <goto>vega_whispers_21_</goto>
       </second>
     </entry>
